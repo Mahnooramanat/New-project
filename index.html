@@ -1,338 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE OF FOODPANDA</title>
-    <link rel="icon"href="./images/foodpanda image.png"type="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Rock Paper Scissor Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-      <nav class="navbar bg-body-tertiary shadow-lg p-21 bg-body-tertiary rounded">
-         <div class="container-fluid mx-5">
-           <a class="navbar-brand d-flex align-items-center p-2" href="./index.html">
-           <img src="./images/foodpanda app.png"alt="logo"width="40"height="40"
-             class="d-inline-block align-text-top">
-            <div class="header_text mx-2">foodpanda</div>
-           </a> 
-        <div class="side_btn d-flex align-items-center p-2 my-2">
-          <a href="./login.html">
-          <button type="button" class="btn btn-sm login">log in</button>
-         <button type="button" class="btn btn-outline btn-sm signup">sign up</button>
-          </a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" 
-          class="bi bi-globe2 globe" viewBox="0 0 16 16">
-          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
-        </svg>        
-         <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                EN
-               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><button class="dropdown-item" type="button">English</button></li>
-              </ul>
+    <div class="allGames">
+        <h1>Lets play a games for fun</h1>
+        <div class="games1-2">
+            <div class="game1">
+                
+                <h1>rock-paper-scissor</h1>
+                <img src="./rockback.png" class="img-set">
+               <div class="button"><button id="rock">START</button></div> 
             </div>
-            <svg aria-hidden="true" focusable="false" class="fl-brand-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z">
+            <div class="game2">
+               
+                <h1>Friend-name-checker</h1>
+                <img src="./friendback.png">
+                <div class="button"><button>START</button></div> 
+            </div>
+        
+        
+            <div class="game3">
+                <h1>Evaluating-number</h1>
+                <img src="./numberback.jpg">
+                <div class="button"><button>START</button></div> 
+               
+            </div>
+            <div class="game4">
+                <h1>TIc-Tac-Tao</h1>
+                <img src="./ticback.png">
+                <div class="button"><button> <a href="#" id="gametic">START</a></button></div> 
 
-            </path>
-          </svg>
+            </div>
         </div>
-         </div>
-      </nav>
-  </header>
-  <section class="home">
-    <div class="container_home">
-      <div  class="content d-flex align-items-center">
-        <h1 class="home_text">
-          It's the food and groceries you love,<br> delivered
-        </h1> 
-        <div class="image">
-          <img src="./images/webiste image.jpg"alt="">
+    </div><div>
+        <div class="allGames"></div>
+    </div>
+    <selection id="#rock"> </selection>    <h1>Rock Paper Scissor Game</h1>
+    <div class="design">
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.jpg">
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.jpg">
+            </div>
+            <div class="choice" id="scissor">
+                <img src="./images/scissor.jpg">
+            </div>
+
+        </div>
+        <div class="score">
+            <div class="user-score">
+                <p id="user">0</p>
+                <p>user-score</p>
+            </div>
+            <div class="computer-score">
+                <p id="computer">0</p>
+                <p>computer-score</p>
+            </div>
+        </div>
+        <div class="msg-display">
+            <p id="msg">your turn!</p>
         </div>
     </div>
-    <div class="main">  
-        <div class="search in d-flex">
-       <div class="input-group mb-3 me-3">
-        <input type="text" class="form-control" placeholder="Enter your full address" aria-label="Recipient's username" aria-describedby="button-addon2">
-      </div>  <span class="input-group-text"id="basic-addon2"><i class='bx bx-current-location'></i></span> 
-       <button class="btn-find">find food</button>    
-      </div>
-    </div>
-    </div>
-  </section>
-    <h2>You prepare the food,we handle the rest</h2>
-  <div class="resturant">
-    <img src=".\images/resturant image.webp">
-  <!-- </div>  -->
-    <div class="container">
-      
-    <h1>List your restaurant or shop on foodpanda</h1>
+</div>
+<h1>Friend checker Game</h1>
+    <div id="Friend checker game">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
+        <button>A</button>
 
-    <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!<br>
+    </div>
+    <div id="Evaluating a number game" class="tabcontent">
+        <h3>Evaluating a number game</h3>
+        <center> <button class="game" onclick="playevNum()">Play Game (Auto)</button></center>
+    </div>
 
 
-    It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!<br>
 
-   Interested? Let's start our partnership today!<br></p>
-   <button class="btn">Get started</button>  
-  </div>
-  </div>
-  <h2>
-    Find us in these cities & many more!
-  </h2>
-   <div class="box-contant">
-     <div class="cards1">
-     <img src="./images.jpg">
-    <p>Islamabad</p>
-     </div>
-     <div class="cards2">
-    <img src="./images\HD-wallpaper-mazar-e-quaid-founder-of-pakistan-muhammad-ali-jinnah-founder-jinnah-mausoleum-national-mausoleum-pakistan.jpg">
-    <p>Karachi</p>
-     </div>
-     <div class="cards3">
-    <img src="./lahore.jpg">
-     <p>Lahore</p>
-     </div>
-     <div class="cards4">
-    <img src="./images\images (2).jpg">
-    <p>Faisalabad</p>
-     </div>
-  </div>
-  <div class="container-fluid">
-   <div class="cards5">
-   <img src="./images\rawalpindi.jpg">
-    <p>Rawalpindi</p>
-   </div>
-   <div class="cards6">
-    <img src="./images\abboatbad.jpg">
-   <p>Abbotabad</p>
-   </div>
-   <div class="cards7">
-    <img src="./images/bahaalpur.jpg">
-   <p>Bhawalpur</p>
-   </div>
-   <div class="cards8">
-    <img src="./images/dera ghazi khan.webp">
-   <p>Dera Ghazi Khan</p>
-   </div>
-   </div>
-   <div class="cities">
-   <div class="box1">
-     <img src="./images/gujranwala.jpg">
-     <p>Gujranwala</p>
-   </div>
-   <div class="box2">
-    <img src="./images/gujrat.jpg">
-    <p>Gujrat</p>
-  </div>
-  <div class="box3">
-    <img src="./images\hyderabad.jpg">
-    <p>Hyderabad</p>
-  </div>
-  <div class="box4">
-    <img src="./images/jhelum.jpg">
-    <p>Jhelum</p>
-  </div>
-   </div>
-   <div class="frame">
-     <div class="box5">
-       <img src="./images/-Kamoke12.jpg">
-       <p>Kamoke</p>
-     </div>
-     <div class="box6">
-      <img src="./images/larkana.jpg">
-      <p>Larkana</p>
-    </div>
-    <div class="box7">
-      <img src="./images/mangla.jpg">
-      <p>Mangla</p>
-    </div>
-    <div class="box8">
-      <img src="./images/mardan.jpg">
-      <p>Mardan</p>
-    </div>
-   </div>
-   <div class="pictures">
-    <div class="box9">
-      <img src="./images/multan.jpg">
-      <p>Multan</p>
-    </div>
-    <div class="box10">
-     <img src="./images/Murree.jpg">
-     <p>Murree</p>
-   </div>
-   <div class="box11">
-     <img src="./images/okara.jpg">
-     <p>Okara</p>
-   </div>
-   <div class="box12">
-     <img src="./images/panio aqil.jpg">
-     <p>Pano Aqil</p>
-   </div>
-   </div>
-   <div class="container2">
-   <div class="box13">
-    <img src="./images/peshawar.jpg">
-    <p>Peshawar</p>
-  </div>
-  <div class="box14">
-    <img src="./images/quetta-station.jpg">
-    <p>Quetta</p>
-  </div>
-  <div class="box15">
-    <img src="./images/Rahim Yar Khan.jpg">
-    <p>Rahim Yar Khan.jpg</p>
-  </div>
-   
-  <div class="box16">
-    <img src="./images/Sadiqabad.jpg">
-    <p>sadiqabad</p>
-  </div>
-  </div>
-  <div class="container3">
-    <div class="box17">
-     <img src="./images/sahiwal.jpg">
-     <p>Sahiwal</p>
-   </div>
-   <div class="box18">
-    <img src="./images/sargodha.jpg">
-    <p>Sargodha</p>
-  </div>
-  <div class="box19">
-    <img src="./images/Sheikhupura.jpg">
-    <p>Sheikhupura</p>
-  </div>
-  <div class="box20">
-    <img src="./images/Clock-tower-Sialkot-Pak.webp">
-    <p>Sialkot</p>
-  </div>
-  </div>
-  <div class="container4">
-    <div class="box21">
-     <img src="./images/sukkur.jpg">
-     <p>Sukkur</p>
-   </div>
-   <div class="box22">
-    <img src="./images/_Wah_Cantt.jpg">
-    <p>Wah cantt</p>
-  </div>
-  </div>
-  <h3>Put us in your pocket</h3>
-  <div class="app">
-    <div class="mobile">
-      <img src="./images\mobile apps.webp">
-      </div>
-   <h5>Download the food and groceries you love</h5>
-   <div class="text"> 
-     <img src="./images/qr_code_scanner.jpg"></div>
-     <div class="para">
-      <p>It's all at your fingertips the restaurants and<br> shops you love. Find the right food and <br>groceries to suit your mood, and make the first<br> bite last. Go ahead, download us.</p>
-         </div>
-   <div class="icons">
-    <!-- <div class="appstore"> -->
-    <img src="./images/apple-app-store-logo.jpg">
-    <div class="google">
-    <img src="./images/googleplay.png">
-    </div>
-    <div class="appgallery">
-      <img src="./images/appgallery.jpg">
-    </div>
-    </div>
-   <!-- </div> -->
-  <!-- </div> -->
-      <!-- </div> -->
-      <h6>Take your office out to lunch</h6>
-      <img class="partners-image" src="https://images.deliveryhero.io/image/foodpanda/home-corporate-pk.jpg">
-      <div class="fluid">
-        <h4>Foodpanda for business</h4>
 
-    <p>Order lunch or fuel for work-from-home, late nights in the office, corporate events, client meetings, and much more.</p>
-   <button class="button">Get started</button> 
-      </div>    
-      <div class="context">
-        Order food and groceries online from the best restaurants and shops on foodpanda
-      </div>
-      <div class="context3">
-      Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then<br> foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your<br> every day easier.
-      </div>
-      <div class="context2">
-        What's new?
-      </div>
-      <div class="context3">
-      ✓ Wide variety of restaurants and shops, an abundance of cuisines & products.<br>
-✓ High quality delivery service.<br>
-✓ Live chat feature to give App users instant help when they need it.<br>
-✓ NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.
-</div>
-<div class="context2">
-  Frequently Asked Questions
-</div>
-<div class="sub-headings">
-  How can I get foodpanda delivery?
-</div>
-<div class="context3">
-To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines,<br> check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will<br> arrive at your doorstep!
-</div>     
-<div class="sub-headings">
-  Which takeout restaurants open now near me?
-</div>
-<div class="context3">
-  You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will<br> see all the available restaurants and shops that deliver to your area.
-</div>
-<div class="sub-headings">
-  Does foodpanda deliver 24 hours?
-</div>
-<div class="context3">
-  Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan deliver<br> to you within 24 hours by using your address. You can also order groceries 24 hours a day via pandamart.
-</div>
-<div class="sub-headings">
-  Can you pay cash for foodpanda?
-</div>
-<div class="context3">
-  Yes, you can pay cash on delivery for foodpanda in Pakistan.
-</div>
-<div class="sub-headings">How can I pay foodpanda online?</div>
-<div class="context3">You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</div>
-<div class="sub-headings">Can I order foodpanda for someone else?</div>
-<div class="context3">Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're<br> ordering for. Please keep in mind that if the delivery details are not correct and the order cannot be delivered, we won't be able to process a refund.</div>
-<div class="sub-headings">How much does foodpanda charge for delivery?</div>
-<div class="context3">Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and the restaurant you are ordering from. You can<br> always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of your restaurant<br> listing.</div>
-<div class="sub-headings">What restaurants let you order online?</div>
-<div class="context3">There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, KFC, McDonald's, Pizza Hut, OPTP, Hardee's, Domino's,<br> Kababjees and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.</div>
-<div class="sub-headings">Does foodpanda have minimum order?</div>
-<div class="context3">Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from and is indicated during your ordering<br> process.</div>
-<div class="sub-headings">What is the difference between delivery and Pick-Up?</div>
-<div class="context3">If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can<br> takeaway your food directly from the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.</div>
-<div class="sub-headings">Order food and groceries online with foodpanda now and enjoy a great dining experience!</div>
-<hr>
-<div class="namesofcities">
-  Laos | Cambodia   |   Myanmar   |   Thailand   |   Hong Kong   |   Taiwan   |   Malaysia   |   Philippines   |   Singapore   |   Bangladesh<hr>
-</div><div class="foodpanda">© foodpanda
-<div class="column">
-  Press<br>pandapay Terms & Condition<br>Security<br>Careers<br>Cashback Terms and Conditions<br>Partners with Us<br>All cities<br>Ramzan deals
-<!-- </div> -->
-<div class="column1">
-  Help Center<br>Terms & Condition<br>Download foodpanda Apps<br>Suggest a restaurant<br>All cuisines<br>pandago - Request a Rider<br>Update on COVID-19 in Pakistan<br>foodpanda Home Chef
-</div>
-<div class="column1">
-  Refunds with pandapay<br>Privacy policy<br>Human rights policy<br>Corporate Customer<br>foodpanda Magazine<br>foodpanda Vouchers & Coupons<br>pandamart Grocery Delivery<br>
-  Become an Affiliate
-</div>
-</div>
-</div><hr>
-<div class="logo">
-<img src="./images/foodpanda app.png"alt="logo"width="40"height="40"
-class="d-inline-block align-text-top"> <div class="header_text mx-2">foodpanda</div>
-<div class="logos">
-<img src="./images/instagram.webp">
-</div>
-<div class="icon">
-  <img src="./images/facebook.png">
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="games.js"></script>
 </body>
+
 </html>
