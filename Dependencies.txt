@@ -1,0 +1,5 @@
+FRONTEND DEPENDENCIES:
+npm i styled-components react-toastify react-router-dom react-icons lorem-ipsum axios @mui/material @emotion/styled @emotion/react
+
+BACKEND DEPENDENCIES:
+npm i bcryptjs cookie-parser cors dotenv express express-fileupload express-openid-connect express-session jsonwebtoken mogodb mongoose nodemon validator
